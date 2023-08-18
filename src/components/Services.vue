@@ -38,7 +38,7 @@ export default {
 
 <template>
   <section
-    class="bg-[url('./assets/images/office-down.png')] h-[150vh] md:h-screen bg-cover bg-fixed md:pb-32 pb-20"
+    class="bg-[url('./assets/images/office1.png')] h-[150vh] md:h-screen bg-cover bg-fixed md:pb-32 pb-20"
   >
     <div
       class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px]"
@@ -198,5 +198,9 @@ p {
     max-width: 300px;
     max-height: 300px;
   }
+}
+
+p {
+  font-size: 22px;
 }
 </style>
