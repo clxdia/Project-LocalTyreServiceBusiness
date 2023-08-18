@@ -52,7 +52,7 @@ export default {
 
       <div class="md:w-full md:flex md:items-center">
         <div
-          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:items-baseline md:h-[20vw] md:min-h-[300px] md:max-h-[400px]"
+          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:items-baseline md:min-h-[300px] md:max-h-[400px]"
         >
           <div
             class="flex flex-row md:flex-col mt-5 items-center text-left gap-2 animate-left left-service"
@@ -68,7 +68,7 @@ export default {
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 md:text-[22px] md:w-[70%] text-center md:text-left"
+                class="md:mt-5 text-[13px] md:text-[22px] md:w-[70%] text-center md:text-left"
               >
                 Sostituzione e montaggio di pneumatici
               </p>
@@ -88,7 +88,7 @@ export default {
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 md:text-[22px] md:w-1/2 text-center md:text-left"
+                class="md:mt-5 text-[13px] md:text-[22px] md:w-1/2 text-center md:text-left"
               >
                 Bilanciamento delle ruote
               </p>
@@ -107,14 +107,14 @@ export default {
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 md:text-[22px] md:w-1/2 md:text-left text-center"
+                class="md:mt-5 text-[13px] md:text-[22px] md:w-1/2 text-center md:text-left"
               >
                 Riparazione di pneumatici
               </p>
             </div>
           </div>
           <div
-            class="flex flex-row-reverse md:flex-col items-center text-right gap-2 md:pb-28 animate-right right-service"
+            class="flex flex-row-reverse md:flex-col items-center md:text-left text-right gap-2 md:col-span-1 md:pb-28 animate-right right-service"
             :class="{ 'show-animate': showRight }"
           >
             <div
@@ -126,7 +126,7 @@ export default {
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 md:text-[22px] md:w-1/2 text-center md:text-left"
+                class="md:mt-5 text-[13px] md:text-[22px] md:w-1/2 text-center md:text-left"
               >
                 Vendita di pneumatici
               </p>
@@ -137,7 +137,7 @@ export default {
             :class="{ 'show-animate': showLeft }"
           >
             <div
-              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col justify-between md:min-h-[300px] h-[40vw]"
+              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:min-h-[300px] h-[40vw]"
             >
               <p>05</p>
               <img
@@ -145,7 +145,7 @@ export default {
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 md:text-[22px] md:w-1/2 text-center md:text-left"
+                class="md:mt-5 text-[13px] md:text-[22px] md:w-1/2 text-center md:text-left"
               >
                 Consulenza tecnica
               </p>
@@ -179,10 +179,6 @@ export default {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-p {
-  font-size: 13px;
-}
-
 .show-animate {
   opacity: 1;
   transform: translateX(0);
@@ -198,9 +194,5 @@ p {
     max-width: 300px;
     max-height: 300px;
   }
-}
-
-p {
-  font-size: 22px;
 }
 </style>
