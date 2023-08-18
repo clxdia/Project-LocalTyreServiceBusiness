@@ -6,7 +6,7 @@
       <h1 class="text-center text-[30px]">DML</h1>
     </nav>
     <div
-      class="bg-[url('./assets/images/heroMB.png')] bg-fixed bg-no-repeat bg-cover md:bg-[url('./assets/images/herodark.png')] pt-[13vh] h-[100vh] md:h-[80vh] bg-bottom md:bg-center p-10 flex flex-col md:justify-center md:px-[10%] relative text-left md:text-center"
+      class="bg-[url('./assets/images/heroMB.png')] md:bg-fixed bg-scroll bg-no-repeat bg-cover md:bg-[url('./assets/images/herodark.png')] pt-[13vh] h-[100vh] md:h-[80vh] bg-bottom md:bg-center p-10 flex flex-col md:justify-center md:px-[10%] relative text-left md:text-center"
     >
       <h2 class="text-[40px] w-[80%] md:w-full block uppercase leading-tight">
         <span class="sm:text-stroke-trick sm:text-white">Dalla A alla Z :</span>
