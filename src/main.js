@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 import { register } from "swiper/element/bundle";
+import Vue3Marquee from "vue3-marquee";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -19,4 +20,7 @@ library.add(faCircleChevronRight);
 
 register();
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(Vue3Marquee)
+  .mount("#app");

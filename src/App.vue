@@ -1,13 +1,15 @@
 <script setup>
 import Header from "./components/Header.vue";
 import Services from "./components/Services.vue";
+import Brands from "./components/Brands.vue";
 </script>
 
 <template>
   <Header />
   <main class="max-w-[2000px] font-contrail">
     <Services />
-    <section class="max-w-[2000px] flex w-full">
+    <Brands />
+    <!-- <section class="max-w-[2000px] flex w-full">
       <div
         class="md:block hidden bg-[url('./assets/images/repair.jpg')] bg-cover bg-bottom h-[17vw] w-[70%]"
       ></div>
@@ -17,7 +19,7 @@ import Services from "./components/Services.vue";
       <div
         class="md:block hidden bg-[url('./assets/images/tire2.jpg')] bg-cover bg-bottom h-[17vw] w-[70%]"
       ></div>
-    </section>
+    </section> -->
     <section
       class="max-w-[2000px] w-full bg-[url('./assets/images/tiree.png')] md:bg-contain md:bg-no-repeat bg-cover md:bg-[center_left_30rem] bg-top pb-16 pt-10"
     >
