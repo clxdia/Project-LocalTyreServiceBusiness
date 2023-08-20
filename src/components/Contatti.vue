@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-white max-w-[2000px] w-full text-center text-black pt-10 h-fit relative"
+    class="bg-[#F4F3F2] max-w-[2000px] w-full text-center text-black pt-32 h-[90vh] relative"
   >
     <h3>Contatti</h3>
     <div class="w-[80%] m-auto pt-4 md:flex md:justify-between md:gap-10 pb-32">
