@@ -2,12 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   color: white;
   text-transform: uppercase;
@@ -21,11 +23,6 @@ h4 {
   font-size: 20px;
 }
 
-.text-stroke-trick {
-  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
-    -1px 1px 0 #fff, 1px 1px 0 #fff;
-}
-
 p {
   font-size: 16px;
 }
@@ -37,6 +34,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  background-color: black;
 }
 
 body {

@@ -38,7 +38,7 @@ export default {
 
 <template>
   <section
-    class="bg-[url('./assets/images/office1.png')] md:h-screen h-fit bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
+    class="bg-[url('./assets/images/office1.png')] mt-[100vh] md:mt-0 md:h-screen h-fit bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
   >
     <div
       class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px]"
@@ -61,7 +61,7 @@ export default {
             <div
               class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative md:min-h-[300px] h-[40vw]"
             >
-              <p>01</p>
+              <p class="text-[13px]">01</p>
 
               <img
                 src="../assets/icons/tyre.png"
@@ -70,7 +70,7 @@ export default {
               <p
                 class="md:mt-5 text-[13px] md:text-[22px] md:w-[70%] text-center md:text-left"
               >
-                Sostituzione e montaggio di pneumatici
+                Sostituzione di pneumatici
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default {
             <div
               class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal relative md:min-h-[300px] h-[40vw]"
             >
-              <p>02</p>
+              <p class="text-[13px]">02</p>
 
               <img
                 src="../assets/icons/bilanciamento.png"
@@ -101,7 +101,7 @@ export default {
             <div
               class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:min-h-[300px] h-[40vw]"
             >
-              <p>03</p>
+              <p class="text-[13px]">03</p>
               <img
                 src="../assets/icons/riparazione.png"
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
@@ -120,7 +120,7 @@ export default {
             <div
               class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:min-h-[300px] h-[40vw]"
             >
-              <p>04</p>
+              <p class="text-[13px]">04</p>
               <img
                 src="../assets/icons/vendita.png"
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
@@ -139,7 +139,7 @@ export default {
             <div
               class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:min-h-[300px] h-[40vw]"
             >
-              <p>05</p>
+              <p class="text-[13px]">05</p>
               <img
                 src="../assets/icons/consulenza.png"
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
