@@ -2,9 +2,7 @@
 
 <template>
   <header class="text-white bg-black">
-    <nav
-      class="py-2 md:py-3 h-[7vh] font-racing fixed top-0 w-full z-[3] bg-black"
-    >
+    <nav class="py-2 md:py-3 font-racing fixed top-0 w-full z-[3] bg-black">
       <h1 class="text-center text-[30px]">DML</h1>
     </nav>
     <div

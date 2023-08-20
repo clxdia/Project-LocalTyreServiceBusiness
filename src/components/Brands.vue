@@ -76,11 +76,14 @@ export default {
 </script>
 
 <template>
-  <section class="bg-white h-fit">
+  <section
+    class="h-fit bg-black relative"
+    :class="{ 'bg-white': bgColorChange }"
+  >
     <div
       class="h-fit relative pb-[30vh] brands transition-opacity duration-700 opacity-100"
       :class="{
-        'bg-white transition-opacity duration-700 opacity-100': bgColorChange,
+        'transition-opacity duration-700 opacity-0': bgColorChange,
         'bg-black transition-opacity duration-700 opacity-100': !bgColorChange,
       }"
     >
@@ -114,12 +117,15 @@ export default {
     </div>
   </section>
 
-  <section class="bg-white h-fit">
+  <section
+    class="h-fit bg-black relative"
+    :class="{ 'bg-white': bgColorChange }"
+  >
     <div
       class="relative max-w-[2000px] w-full md:bg-contain md:bg-no-repeat bg-cover md:bg-[center_left_30rem] bg-top pb-16 pt-40"
       :class="{
-        'bg-white transition-opacity duration-700 opacity-100': bgColorChange,
-        'bg-black transition-opacity duration-700 opacity-100': !bgColorChange,
+        'transition-opacity duration-700 opacity-100': bgColorChange,
+        'bg-black transition-opacity duration-700 opacity-0': !bgColorChange,
       }"
     >
       <h3 class="text-center font-montserrat uppercase font-black text-black">
