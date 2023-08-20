@@ -9,21 +9,10 @@ import Brands from "./components/Brands.vue";
   <main class="max-w-[2000px] font-contrail">
     <Services />
     <Brands />
-    <!-- <section class="max-w-[2000px] flex w-full">
-      <div
-        class="md:block hidden bg-[url('./assets/images/repair.jpg')] bg-cover bg-bottom h-[17vw] w-[70%]"
-      ></div>
-      <div
-        class="bg-[url('./assets/images/brandsMB.png')] md:bg-[url('./assets/images/brands2.png')] bg-cover md:h-[17vw] h-[20vw] bg-center w-full"
-      ></div>
-      <div
-        class="md:block hidden bg-[url('./assets/images/tire2.jpg')] bg-cover bg-bottom h-[17vw] w-[70%]"
-      ></div>
-    </section> -->
     <section
       class="max-w-[2000px] w-full bg-[url('./assets/images/tiree.png')] md:bg-contain md:bg-no-repeat bg-cover md:bg-[center_left_30rem] bg-top pb-16 pt-10"
     >
-      <h3 class="text-center">Gommista</h3>
+      <h3 class="text-center font-montserrat uppercase font-black">Gommista</h3>
       <div class="mx-auto w-fit text-center relative mt-10">
         <img
           src="./assets/images/guy.jpg"

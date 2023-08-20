@@ -38,7 +38,7 @@ export default {
 
 <template>
   <section
-    class="bg-[url('./assets/images/office1.png')] h-[150vh] md:h-screen bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20"
+    class="bg-[url('./assets/images/office1.png')] md:h-screen h-fit bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
   >
     <div
       class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px]"
@@ -161,6 +161,9 @@ export default {
         </div>
       </div>
     </div>
+    <div
+      class="bg-gradient-to-t from-black w-full h-[30vh] absolute bottom-0"
+    ></div>
   </section>
 </template>
 

@@ -1,21 +1,32 @@
 <script>
 import { Vue3Marquee } from "vue3-marquee";
 
-import barumLogo from "@/assets/logos/barumb.png";
-import dunlopLogo from "@/assets/logos/dunlopb.png";
-import gtRadialLogo from "@/assets/logos/gtradialb.png";
-import yokohamaLogo from "@/assets/logos/yokohamab.png";
-import tigarLogo from "@/assets/logos/tigarb.png";
+import barumLogo from "@/assets/logos/barumw.png";
+import dunlopLogo from "@/assets/logos/dunlopw.png";
+import gtRadialLogo from "@/assets/logos/gtradialw.png";
+import yokohamaLogo from "@/assets/logos/yokohamaw.png";
+import tigarLogo from "@/assets/logos/tigar2.png";
+import goodyearLogo from "@/assets/logos/goodyearw.png";
+import goodrichLogo from "@/assets/logos/goodrichw.png";
 
 const brands1 = [
   barumLogo,
   dunlopLogo,
   gtRadialLogo,
-  barumLogo,
+  yokohamaLogo,
   dunlopLogo,
-  gtRadialLogo,
+  goodyearLogo,
 ];
-const brands2 = [yokohamaLogo, tigarLogo, barumLogo, dunlopLogo, gtRadialLogo];
+const brands2 = [
+  goodrichLogo,
+  yokohamaLogo,
+  tigarLogo,
+  dunlopLogo,
+  yokohamaLogo,
+  goodrichLogo,
+  dunlopLogo,
+  tigarLogo,
+];
 const brands3 = [
   gtRadialLogo,
   barumLogo,
@@ -41,7 +52,7 @@ export default {
 </script>
 
 <template>
-  <div class="brand-marquee">
+  <div class="bg-black">
     <div class="w-full">
       <Vue3Marquee style="width: 100%; height: 100px">
         <img
@@ -51,7 +62,7 @@ export default {
         />
       </Vue3Marquee>
     </div>
-    <div class="marquee-content">
+    <div>
       <Vue3Marquee>
         <img
           v-for="logo in brands2"
@@ -60,7 +71,7 @@ export default {
         />
       </Vue3Marquee>
     </div>
-    <div class="marquee-content">
+    <div>
       <Vue3Marquee>
         <img
           v-for="logo in brands3"
