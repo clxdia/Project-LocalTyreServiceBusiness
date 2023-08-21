@@ -1,8 +1,8 @@
 <template>
   <section
-    class="max-w-[2000px] w-full md:text-center text-left text-white pt-10 h-fit relative bg-[#252525]"
+    class="max-w-[2000px] w-full md:text-center text-left text-white pt-0 h-fit relative bg-[#252525]"
   >
-    <div
+    <!-- <div
       class="w-[80%] m-auto pt-4 md:flex md:justify-between md:gap-10 pb-10 font-montserrat"
     >
       <div
@@ -11,7 +11,9 @@
         <div class="md:w-[30%] w-full">
           <h3 class="text-left font-[700] uppercase mb-5">Contatti</h3>
         </div>
-        <div class="md:w-[70%] w-full md:flex block justify-evenly">
+        <div
+          class="md:w-[70%] w-full md:flex block justify-evenly items-center"
+        >
           <div
             class="w-full md:w-auto md:mb-0 mb-6 flex flex-col md:justify-start md:gap-5"
           >
@@ -43,7 +45,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div style="width: 100%; overflow: hidden; height: 350px">
       <iframe
         width="100%"
