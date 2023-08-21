@@ -78,7 +78,7 @@ export default {
 <template>
   <div class="relative">
     <section
-      class="h-[80vh] relative"
+      class="h-screen relative"
       :class="{
         'bg-[#F4F3F2] transition-colors duration-700': bgColorChange,
         'bg-black transition-colors duration-700': !bgColorChange,
@@ -122,7 +122,6 @@ export default {
     </section>
 
     <section
-      id="profile"
       class="h-[70vh] relative"
       :class="{
         'bg-black transition-colors duration-700': !bgColorChange,
@@ -130,19 +129,22 @@ export default {
       }"
     >
       <div
-        class="relative max-w-[2000px] w-full md:bg-contain md:bg-no-repeat bg-cover md:bg-[center_left_30rem] bg-top pb-16 pt-40 h-screen"
+        class="relative max-w-[2000px] w-full md:bg-contain md:bg-no-repeat bg-cover md:bg-[center_left_30rem] bg-top pb-16 h-screen"
         :class="{
           'transition-opacity duration-100 opacity-100': bgColorChange,
           'transition-opacity duration-100 opacity-0': !bgColorChange,
         }"
       >
-        <h3 class="text-center font-montserrat uppercase font-black text-black">
+        <h2
+          class="text-center font-montserrat uppercase font-black text-black text-[25px] md:text-[40px]"
+        >
           Gommista
-        </h3>
+        </h2>
         <div class="mx-auto w-fit text-center relative mt-10">
           <img
             src="../assets/images/guy.jpg"
             class="min-w-[300px] min-h-[300px] w-[25vw] h-[25vw] z-10"
+            id="profile"
           />
           <p
             class="bg-red-700 px-14 py-5 w-fit z-10 bottom-[20px] right-[-30px] absolute text-white"
