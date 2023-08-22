@@ -7,35 +7,30 @@ export default {
           id: "01",
           title: "Sostituzione di pneumatici",
           pic: "tyre",
-          direction: "showLeft",
           class: ["animate-left", "left-service"],
         },
         {
           id: "02",
           title: "Bilanciamento delle ruote",
           pic: "bilanciamento",
-          direction: "showRight",
           class: ["animate-right", "right-service"],
         },
         {
           id: "03",
           title: "Riparazione di pneumatici",
           pic: "riparazione",
-          direction: "showLeft",
           class: ["animate-left", "left-service"],
         },
         {
           id: "04",
           title: "Vendita di pneumatici",
           pic: "vendita",
-          direction: "showRight",
           class: ["animate-right", "right-service"],
         },
         {
           id: "05",
           title: "Consulenza tecnica",
           pic: "consulenza",
-          direction: "showLeft",
           class: ["animate-left", "left-service"],
         },
       ],
@@ -89,26 +84,26 @@ export default {
 
       <div class="md:w-full md:flex md:items-center">
         <div
-          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:min-h-[300px]"
+          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:min-h-[300px] md:h-[20vw]"
         >
           <div
             v-for="service in services"
-            class="flex flex-row mt-5 items-center gap-2 md:min-w-[20vw] md:min-h-[20vw]"
+            class="flex flex-row mt-5 items-center gap-2 md:min-w-[20vw] md:h-[20vw] md:min-h-[20vw] min-h-[40vw]"
             :key="service.id"
             :class="{
-              'show-animate': service.direction,
+              'show-animate': showLeft,
               [service.class[1]]: true,
               [service.class[0]]: true,
             }"
           >
             <div
-              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative h-full"
+              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative md:h-[20vw] md:min-w-[20vw] h-[40vw]"
             >
               <p class="text-[13px] md:text-[1.2vw]">{{ service.id }}</p>
 
               <img
                 :src="`./src/assets/icons/${service.pic}.png`"
-                class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
+                class="md:w-[6vw] w-[13vw] md:min-w-[50px] m-auto md:absolute md:bottom-8 md:right-6"
               />
               <p
                 class="md:mt-5 md:text-[1.2vw] text-[13px] md:w-[70%] text-center md:text-left"
@@ -213,7 +208,7 @@ export default {
 <style scoped>
 .right-service {
   flex-direction: row-reverse;
-  text-align: right;
+  text-align: left;
 }
 
 .left-service {
@@ -241,11 +236,9 @@ export default {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 768px) {
-  .left-service,
+@media screen and (max-width: 768px) {
   .right-service {
-    width: 20vw;
-    height: 20vw;
+    text-align: right;
   }
 }
 </style>
