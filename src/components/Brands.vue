@@ -133,14 +133,14 @@ export default {
     </section>
 
     <section
-      class="md:h-[70vh] relative md:mb-0 mb-[-100px]"
+      class="md:h-[70vh] h-fit relative mb-0 md:mb-[-100px]"
       :class="{
         'bg-black transition-colors duration-700': !bgColorChange,
         'bg-[#F4F3F2] transition-colors duration-700': bgColorChange,
       }"
     >
       <div
-        class="md:flex relative m-auto w-full pb-16"
+        class="md:flex relative m-auto h-fit w-full pb-16"
         :class="{
           'transition-opacity duration-100 opacity-100': bgColorChange,
           'transition-opacity duration-100 opacity-0': !bgColorChange,
