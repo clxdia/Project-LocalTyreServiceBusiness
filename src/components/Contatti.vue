@@ -1,51 +1,7 @@
 <template>
   <section
-    class="max-w-[2000px] w-full md:text-center text-left text-white pt-0 h-fit relative bg-[#252525]"
+    class="w-full md:text-center text-left text-white pt-0 h-fit relative bg-[#252525]"
   >
-    <!-- <div
-      class="w-[80%] m-auto pt-4 md:flex md:justify-between md:gap-10 pb-10 font-montserrat"
-    >
-      <div
-        class="md:w-[100%] md:justify-between flex md:flex-row flex-col md:gap-0 gap-5"
-      >
-        <div class="md:w-[30%] w-full">
-          <h3 class="text-left font-[700] uppercase mb-5">Contatti</h3>
-        </div>
-        <div
-          class="md:w-[70%] w-full md:flex block justify-evenly items-center"
-        >
-          <div
-            class="w-full md:w-auto md:mb-0 mb-6 flex flex-col md:justify-start md:gap-5"
-          >
-            <p class="font-[600]">
-              <font-awesome-icon icon="fa-solid fa-location-dot" /> Indirizzo
-            </p>
-            <p>
-              Via del Biancospino,
-              <span class="md:block inline"> 04023 Formia (LT) </span>
-            </p>
-          </div>
-          <div class="flex mt-5 md:mt-0">
-            <div
-              class="w-1/2 md:w-auto flex mr-[10vw] flex-col md:justify-start md:gap-5"
-            >
-              <p class="font-[600]">
-                <font-awesome-icon icon="fa-solid fa-phone" /> Telefono
-              </p>
-              <p>0771 736786</p>
-            </div>
-            <div
-              class="w-1/2 md:w-auto flex flex-col md:justify-start md:gap-5"
-            >
-              <p class="font-[600]">
-                <font-awesome-icon icon="fa-solid fa-clock" /> Orario
-              </p>
-              <p>09:00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div style="width: 100%; overflow: hidden; height: 350px">
       <iframe
         width="100%"

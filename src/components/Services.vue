@@ -2,6 +2,43 @@
 export default {
   data() {
     return {
+      services: [
+        {
+          id: "01",
+          title: "Sostituzione di pneumatici",
+          pic: "tyre",
+          direction: "showLeft",
+          class: ["animate-left", "left-service"],
+        },
+        {
+          id: "02",
+          title: "Bilanciamento delle ruote",
+          pic: "bilanciamento",
+          direction: "showRight",
+          class: ["animate-right", "right-service"],
+        },
+        {
+          id: "03",
+          title: "Riparazione di pneumatici",
+          pic: "riparazione",
+          direction: "showLeft",
+          class: ["animate-left", "left-service"],
+        },
+        {
+          id: "04",
+          title: "Vendita di pneumatici",
+          pic: "vendita",
+          direction: "showRight",
+          class: ["animate-right", "right-service"],
+        },
+        {
+          id: "05",
+          title: "Consulenza tecnica",
+          pic: "consulenza",
+          direction: "showLeft",
+          class: ["animate-left", "left-service"],
+        },
+      ],
       animateObserver: null,
     };
   },
@@ -41,40 +78,46 @@ export default {
     class="bg-[url('./assets/images/office1.png')] mt-[100vh] md:mt-0 md:h-screen h-fit bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
   >
     <div
-      class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px]"
+      class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px] flex flex-col h-full justify-evenly"
     >
-      <div class="md:w-[365px]">
+      <div class="md:w-[30%]">
         <h2>Passione e precisione al tuo servizio</h2>
-        <h4 class="text-white mb-16 font-inter italic">
+        <h3 class="text-white mb-16 font-inter italic">
           Scopri i servizi su misura per te!
-        </h4>
+        </h3>
       </div>
 
       <div class="md:w-full md:flex md:items-center">
         <div
-          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:items-baseline md:min-h-[300px] md:max-h-[400px]"
+          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:min-h-[300px]"
         >
           <div
-            class="flex flex-row md:flex-col mt-5 items-center text-left gap-2 animate-left left-service"
-            :class="{ 'show-animate': showLeft }"
+            v-for="service in services"
+            class="flex flex-row mt-5 items-center gap-2 md:min-w-[20vw] md:min-h-[20vw]"
+            :key="service.id"
+            :class="{
+              'show-animate': service.direction,
+              [service.class[1]]: true,
+              [service.class[0]]: true,
+            }"
           >
             <div
-              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative md:min-h-[300px] h-[40vw]"
+              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative h-full"
             >
-              <p class="text-[13px]">01</p>
+              <p class="text-[13px] md:text-[1.2vw]">{{ service.id }}</p>
 
               <img
-                src="../assets/icons/tyre.png"
+                :src="`./src/assets/icons/${service.pic}.png`"
                 class="md:w-[6vw] w-[13vw] md:min-w-[100px] m-auto md:absolute md:bottom-6 md:right-6"
               />
               <p
-                class="md:mt-5 text-[13px] md:text-[22px] md:w-[70%] text-center md:text-left"
+                class="md:mt-5 md:text-[1.2vw] text-[13px] md:w-[70%] text-center md:text-left"
               >
-                Sostituzione di pneumatici
+                {{ service.title }}
               </p>
             </div>
           </div>
-          <div
+          <!-- <div
             class="flex flex-row-reverse md:flex-col items-center md:text-left text-right gap-2 md:col-span-1 md:pb-28 animate-right right-service"
             :class="{ 'show-animate': showRight }"
           >
@@ -150,7 +193,7 @@ export default {
                 Consulenza tecnica
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="md:ml-28 hidden md:block">
           <font-awesome-icon
@@ -168,18 +211,29 @@ export default {
 </template>
 
 <style scoped>
-.animate-left {
-  opacity: 0;
-  position: relative;
-  transform: translateX(-100px);
-  transition: opacity 1s ease, transform 1s ease;
+.right-service {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
+.left-service {
+  flex-direction: row;
+  text-align: left;
+}
+
+.animate-left {
+  transform: translateX(-100px);
+}
+
+.animate-left,
 .animate-right {
   opacity: 0;
   position: relative;
-  transform: translateX(100px);
   transition: opacity 1s ease, transform 1s ease;
+  max-width: 100%;
+}
+.animate-right {
+  transform: translateX(100px);
 }
 
 .show-animate {
@@ -192,10 +246,6 @@ export default {
   .right-service {
     width: 20vw;
     height: 20vw;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 300px;
-    max-height: 300px;
   }
 }
 </style>

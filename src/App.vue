@@ -7,7 +7,7 @@ import Contatti from "./components/Contatti.vue";
 
 <template>
   <Header />
-  <main class="max-w-[2000px] font-contrail">
+  <main class="font-contrail">
     <Services />
     <Brands />
     <Contatti />

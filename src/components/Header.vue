@@ -11,7 +11,7 @@
     <div
       class="hero-bg md:relative h-screen bg-[url('./assets/images/heroMB.png')] md:bg-fixed md:bg-no-repeat bg-cover md:bg-[url('./assets/images/herodark.png')] pt-[13vh] md:h-[80vh] bg-bottom md:bg-center p-10 flex flex-col md:justify-center md:px-[10%] text-left md:text-center"
     >
-      <h2 class="text-[40px] w-[80%] md:w-full block uppercase leading-tight">
+      <h2 class="w-[80%] md:w-full block uppercase leading-tight">
         Il Tuo Partner per Gomme a
         <span class="text-stroke-trick text-transparent">Formia!</span>
       </h2>
@@ -26,7 +26,7 @@
         >
       </h3> -->
       <button
-        class="mt-7 bg-red-600 py-1 px-6 rounded-full text-[25px] font-racing w-fit md:mx-auto"
+        class="mt-7 bg-red-600 py-1 px-6 rounded-full md:text-[1.4vw] text-[25px] font-racing w-fit md:mx-auto"
       >
         INFO
       </button>
