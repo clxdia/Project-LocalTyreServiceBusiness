@@ -1,4 +1,10 @@
 <script>
+import tyre from "../assets/icons/tyre.png";
+import bilanciamento from "../assets/icons/bilanciamento.png";
+import riparazione from "../assets/icons/riparazione.png";
+import vendita from "../assets/icons/vendita.png";
+import consulenza from "../assets/icons/consulenza.png";
+
 export default {
   data() {
     return {
@@ -6,31 +12,31 @@ export default {
         {
           id: "01",
           title: "Sostituzione di pneumatici",
-          pic: "tyre",
+          pic: tyre,
           class: ["animate-left", "left-service"],
         },
         {
           id: "02",
           title: "Bilanciamento delle ruote",
-          pic: "bilanciamento",
+          pic: bilanciamento,
           class: ["animate-right", "right-service"],
         },
         {
           id: "03",
           title: "Riparazione di pneumatici",
-          pic: "riparazione",
+          pic: riparazione,
           class: ["animate-left", "left-service"],
         },
         {
           id: "04",
           title: "Vendita di pneumatici",
-          pic: "vendita",
+          pic: vendita,
           class: ["animate-right", "right-service"],
         },
         {
           id: "05",
           title: "Consulenza tecnica",
-          pic: "consulenza",
+          pic: consulenza,
           class: ["animate-left", "left-service"],
         },
       ],
@@ -102,7 +108,7 @@ export default {
               <p class="text-[13px] md:text-[1.2vw]">{{ service.id }}</p>
 
               <img
-                :src="`./src/assets/icons/${service.pic}.png`"
+                :src="service.pic"
                 class="md:w-[6vw] w-[13vw] md:min-w-[50px] m-auto md:absolute md:bottom-8 md:right-6"
               />
               <p
