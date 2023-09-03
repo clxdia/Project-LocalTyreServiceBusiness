@@ -133,7 +133,7 @@ export default {
     </section>
 
     <section
-      id="contacts"
+      id="info"
       class="md:h-[90vh] h-fit relative mb-0"
       :class="{
         'bg-black transition-colors duration-700': !bgColorChange,

@@ -1,4 +1,17 @@
-<script setup></script>
+<script>
+export default {
+  methods: {
+    handleClick() {
+      const contactsSection = document.getElementById("info");
+      if (contactsSection) {
+        contactsSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    },
+  },
+};
+</script>
 
 <template>
   <header class="text-white bg-white">
@@ -24,6 +37,7 @@
 
         <button
           class="mt-7 bg-red-600 py-1 px-6 rounded-full md:text-[1.4vw] text-[20px] font-racing w-fit md:mx-auto"
+          @click="handleClick"
         >
           CONTATTI
         </button>

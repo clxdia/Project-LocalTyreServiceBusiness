@@ -9,7 +9,7 @@ import Footer from "./components/Footer.vue";
   <Header />
   <main class="font-contrail">
     <Services />
-    <Brands ref="contacts" />
+    <Brands />
   </main>
   <Footer />
 </template>
