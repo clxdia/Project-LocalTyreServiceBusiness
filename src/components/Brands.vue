@@ -2,7 +2,7 @@
 import { Vue3Marquee } from "vue3-marquee";
 import { ref } from "vue";
 
-import barumLogo from "@/assets/logos/barumw.png";
+import sumimotoLogo from "@/assets/logos/sumimotow.png";
 import dunlopLogo from "@/assets/logos/dunlopw.png";
 import gtRadialLogo from "@/assets/logos/gtradialw.png";
 import yokohamaLogo from "@/assets/logos/yokohamaw.png";
@@ -14,7 +14,7 @@ import Profilo from "./Profilo.vue";
 const bgColorChange = ref(false);
 
 const brands1 = [
-  barumLogo,
+  sumimotoLogo,
   dunlopLogo,
   gtRadialLogo,
   yokohamaLogo,
@@ -33,10 +33,10 @@ const brands2 = [
 ];
 const brands3 = [
   gtRadialLogo,
-  barumLogo,
+  sumimotoLogo,
   dunlopLogo,
   gtRadialLogo,
-  barumLogo,
+  sumimotoLogo,
   dunlopLogo,
 ];
 
@@ -56,10 +56,10 @@ export default {
   },
 
   mounted() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log("Intersection Observer:", entry.isIntersecting);
-        if (entry.isIntersecting) {
+    const observer = new IntersectionObserver((sections) => {
+      sections.forEach((section) => {
+        console.log("Intersection Observer:", section.isIntersecting);
+        if (section.isIntersecting) {
           bgColorChange.value = true;
         } else {
           bgColorChange.value = false;
@@ -133,7 +133,8 @@ export default {
     </section>
 
     <section
-      class="md:h-[70vh] h-fit relative mb-0 md:mb-[-100px]"
+      id="contacts"
+      class="md:h-[90vh] h-fit relative mb-0"
       :class="{
         'bg-black transition-colors duration-700': !bgColorChange,
         'bg-[#F4F3F2] transition-colors duration-700': bgColorChange,

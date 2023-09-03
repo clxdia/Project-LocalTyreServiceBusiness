@@ -2,23 +2,14 @@
 import Header from "./components/Header.vue";
 import Services from "./components/Services.vue";
 import Brands from "./components/Brands.vue";
-import Contatti from "./components/Contatti.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
   <Header />
   <main class="font-contrail">
     <Services />
-    <Brands />
-    <Contatti />
+    <Brands ref="contacts" />
   </main>
-  <footer class="bg-black text-white w-full flex justify-end relative">
-    <a
-      href="https://github.com/clxdia"
-      target="_blank"
-      class="bg-black text-right mr-10 text-[15px] font-montserrat italic py-4 cursor-pointer"
-    >
-      © 2023 clxdia
-    </a>
-  </footer>
+  <Footer />
 </template>

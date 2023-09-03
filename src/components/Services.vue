@@ -76,14 +76,16 @@ export default {
 
 <template>
   <section
-    class="bg-[url('./assets/images/office1.png')] mt-[100vh] md:mt-0 md:h-screen h-fit bg-cover md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
+    class="bg-[url('./assets/images/bg-office.webp')] md:mt-0 md:h-screen h-fit bg-cover bg-center md:bg-fixed bg-scroll md:pb-32 pb-20 relative"
   >
     <div
       class="m-auto w-[85%] text-center md:text-left pt-10 md:pt-20 text-[25px] md:text-[40px] flex flex-col h-full justify-evenly"
     >
       <div class="md:w-[30%]">
         <h2>Passione e precisione al tuo servizio</h2>
-        <h3 class="text-white mb-16 font-inter italic">
+        <h3
+          class="text-white mb-16 md:text-[18px] text-[15px] font-inter italic"
+        >
           Scopri i servizi su misura per te!
         </h3>
       </div>
