@@ -110,6 +110,7 @@ export default {
               <p class="text-[13px] md:text-[1.2vw]">{{ service.id }}</p>
 
               <img
+                aria-hidden="true"
                 :src="service.pic"
                 class="md:w-[6vw] w-[13vw] md:min-w-[50px] m-auto md:absolute md:bottom-8 md:right-6"
               />
@@ -123,9 +124,10 @@ export default {
         </div>
         <div class="md:ml-28 hidden md:block">
           <font-awesome-icon
-            icon="fa-solid fa-circle-chevron-right"
+            :icon="['fas', 'circle-chevron-right']"
             style="color: #fff"
             class="text-[35px] cursor-pointer"
+            aria-hidden="true"
           />
         </div>
       </div>

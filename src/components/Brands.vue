@@ -99,10 +99,11 @@ export default {
               v-for="logo in brands1"
               class="ml-[50px] mt-16 w-[20vw] min-w-[250px]"
               :src="logo"
+              alt="slider con marche pneumatici trattati in officina tra cui Yokohama, Sumimoto, GTRadial, GoodYear, Michelin ed altre."
             />
           </Vue3Marquee>
         </div>
-        <div>
+        <div aria-hidden="true">
           <Vue3Marquee style="width: 100%; height: fit-content">
             <img
               v-for="logo in brands2"
@@ -111,7 +112,7 @@ export default {
             />
           </Vue3Marquee>
         </div>
-        <div>
+        <div aria-hidden="true">
           <Vue3Marquee style="width: 100%; height: fit-content">
             <img
               v-for="logo in brands3"
@@ -120,7 +121,7 @@ export default {
             />
           </Vue3Marquee>
         </div>
-        <div>
+        <div aria-hidden="true">
           <Vue3Marquee style="width: 100%; height: fit-content">
             <img
               v-for="logo in brands2"

@@ -10,6 +10,7 @@
         src="../assets/images/fotoprofilo.webp"
         class="w-[85%] z-10 m-auto my-auto md:w-[25vw] md:min-w-[400px] md:min-h-[400px]"
         id="profile"
+        alt="Foto del gommista in DML"
       />
       <p
         class="bg-red-700 font-montserrat italic font-[600] px-14 py-5 w-fit z-10 bottom-[20px] right-[15px] absolute text-white text-[15px]"
@@ -36,7 +37,10 @@
         >
           <p class="font-[600]">Indirizzo</p>
           <p>
-            <font-awesome-icon icon="fa-solid fa-location-dot" />
+            <font-awesome-icon
+              :icon="['fas', 'location-dot']"
+              aria-hidden="true"
+            />
             Via del Biancospino,
             <span class="inline"> 04023 Formia (LT) </span>
           </p>
@@ -46,14 +50,17 @@
             class="w-1/2 md:w-auto gap-2 md:text-left text-center flex flex-col md:justify-start md:gap-5"
           >
             <p class="font-[600]">Telefono</p>
-            <p><font-awesome-icon icon="fa-solid fa-phone" /> 0771 736786</p>
+            <p>
+              <font-awesome-icon :icon="['fas', 'phone']" aria-hidden="true" />
+              0771 736786
+            </p>
           </div>
           <div
             class="w-1/2 md:w-auto gap-2 md:text-left text-center flex flex-col md:justify-start md:gap-5"
           >
             <p class="font-[600]">Orario</p>
             <div class="flex gap-2">
-              <font-awesome-icon icon="fa-solid fa-clock" class="mt-1" />
+              <font-awesome-icon :icon="['fas', 'clock']" aria-hidden="true" />
               <div class="text-center">
                 <p>
                   7:45 - 12:45

@@ -18,6 +18,7 @@ export default {
     <nav class="py-2 md:py-3 font-racing fixed top-0 w-full z-20 bg-black">
       <h1 class="text-center text-white text-[30px]">DML</h1>
       <span
+        aria-hidden="true"
         class="bg-gradient-to-r from-black via-gray-400 to-black h-[1px] w-full absolute bottom-0"
       ></span>
     </nav>

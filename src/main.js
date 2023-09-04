@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import { register } from "swiper/element/bundle";
 import Vue3Marquee from "vue3-marquee";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -13,12 +12,7 @@ import {
   faCircleChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faLocationDot);
-library.add(faPhone);
-library.add(faClock);
-library.add(faCircleChevronRight);
-
-register();
+library.add(faLocationDot, faPhone, faClock, faCircleChevronRight);
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)

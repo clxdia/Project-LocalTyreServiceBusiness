@@ -4,6 +4,7 @@
   >
     <div style="width: 100%; overflow: hidden; height: 350px">
       <iframe
+        title="Google Maps di Via del Biancospino, Formia"
         width="100%"
         height="600"
         frameborder="0"
