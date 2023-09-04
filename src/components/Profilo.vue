@@ -23,7 +23,7 @@
   <div
     class="md:w-[50%] md:text-center text-left text-black relative md:mt-0 mt-20 font-montserrat flex-col flex justify-center items-center"
   >
-    <div class="w-[85%]">
+    <div class="w-[85%] md:w-1/2">
       <div class="w-full">
         <h2
           class="md:text-left text-center md:text-[40px] text-[25px] font-montserrat font-[700] text-black uppercase mb-5"
