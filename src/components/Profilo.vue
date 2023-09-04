@@ -9,8 +9,8 @@
       <img
         src="../assets/images/fotoprofilo.webp"
         class="w-[85%] z-10 m-auto my-auto md:w-[25vw] md:min-w-[400px] md:min-h-[400px]"
-        id="profile"
         alt="Foto del gommista in DML"
+        id="profile"
       />
       <p
         class="bg-red-700 font-montserrat italic font-[600] px-14 py-5 w-fit z-10 bottom-[20px] right-[15px] absolute text-white text-[15px]"
@@ -23,7 +23,7 @@
   <div
     class="md:w-[50%] md:text-center text-left text-black relative md:mt-0 mt-20 font-montserrat flex-col flex justify-center items-center"
   >
-    <div class="w-[70%]">
+    <div class="w-[85%]">
       <div class="w-full">
         <h2
           class="md:text-left text-center md:text-[40px] text-[25px] font-montserrat font-[700] text-black uppercase mb-5"
@@ -59,7 +59,7 @@
             class="w-1/2 md:w-auto gap-2 md:text-left text-center flex flex-col md:justify-start md:gap-5"
           >
             <p class="font-[600]">Orario</p>
-            <div class="flex gap-2">
+            <div class="flex gap-2 justify-center">
               <font-awesome-icon :icon="['fas', 'clock']" aria-hidden="true" />
               <div class="text-center">
                 <p>
