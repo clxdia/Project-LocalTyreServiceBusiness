@@ -9,6 +9,8 @@ import yokohamaLogo from "@/assets/logos/yokohamaw.png";
 import tigarLogo from "@/assets/logos/tigar2.png";
 import goodyearLogo from "@/assets/logos/goodyearw.png";
 import goodrichLogo from "@/assets/logos/goodrichw.png";
+import michelinLogo from "@/assets/logos/michelinw.png";
+
 import Profilo from "./Profilo.vue";
 
 const bgColorChange = ref(false);
@@ -25,7 +27,7 @@ const brands2 = [
   goodrichLogo,
   yokohamaLogo,
   tigarLogo,
-  dunlopLogo,
+  michelinLogo,
   yokohamaLogo,
   goodrichLogo,
   dunlopLogo,
@@ -37,7 +39,7 @@ const brands3 = [
   dunlopLogo,
   gtRadialLogo,
   sumimotoLogo,
-  dunlopLogo,
+  michelinLogo,
 ];
 
 export default {
