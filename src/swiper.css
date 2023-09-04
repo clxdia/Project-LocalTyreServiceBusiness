@@ -1,0 +1,60 @@
+.swiper {
+  width: 85%;
+  height: 20vw;
+  margin: 0px;
+  position: static;
+  display: block;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 80%;
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.swiper-button-next {
+  right: 7vw;
+  color: white;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .swiper {
+    height: 40vw;
+  }
+  .card {
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    display: none;
+  }
+}
