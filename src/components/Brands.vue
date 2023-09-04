@@ -2,14 +2,14 @@
 import { Vue3Marquee } from "vue3-marquee";
 import { ref } from "vue";
 
-import sumimotoLogo from "@/assets/logos/sumimotow.png";
-import dunlopLogo from "@/assets/logos/dunlopw.png";
-import gtRadialLogo from "@/assets/logos/gtradialw.png";
-import yokohamaLogo from "@/assets/logos/yokohamaw.png";
-import tigarLogo from "@/assets/logos/tigar2.png";
-import goodyearLogo from "@/assets/logos/goodyearw.png";
-import goodrichLogo from "@/assets/logos/goodrichw.png";
-import michelinLogo from "@/assets/logos/michelinw.png";
+import sumimotoLogo from "@/assets/logos/sumimotow.webp";
+import dunlopLogo from "@/assets/logos/dunlopw.webp";
+import gtRadialLogo from "@/assets/logos/gtradialw.webp";
+import yokohamaLogo from "@/assets/logos/yokohamaw.webp";
+import tigarLogo from "@/assets/logos/tigar2.webp";
+import goodyearLogo from "@/assets/logos/goodyearw.webp";
+import goodrichLogo from "@/assets/logos/goodrichw.webp";
+import michelinLogo from "@/assets/logos/michelinw.webp";
 
 import Profilo from "./Profilo.vue";
 
