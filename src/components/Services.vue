@@ -1,4 +1,15 @@
 <script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "../swiper.css";
+
+import { Pagination, Navigation } from "swiper/modules";
+
 import tyre from "../assets/icons/tyre.png";
 import bilanciamento from "../assets/icons/bilanciamento.png";
 import riparazione from "../assets/icons/riparazione.png";
@@ -41,10 +52,17 @@ export default {
         },
       ],
       animateObserver: null,
+      slidesPerView: 3,
+      showLeft: null,
     };
   },
+  watch: {
+    $route() {
+      this.updateSlidesPerView();
+    },
+  },
   mounted() {
-    this.setupObserver();
+    this.setupObserver(), this.updateSlidesPerView();
   },
   methods: {
     setupObserver() {
@@ -70,6 +88,22 @@ export default {
         this.animateObserver.observe(element);
       });
     },
+    updateSlidesPerView() {
+      if (window.innerWidth < 900) {
+        this.slidesPerView = 2;
+      } else {
+        this.slidesPerView = 3;
+      }
+    },
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination, Navigation],
+    };
   },
 };
 </script>
@@ -90,9 +124,13 @@ export default {
         </h3>
       </div>
 
-      <div class="md:w-full md:flex md:items-center">
+      <div
+        class="md:w-full md:flex md:items-center md:relative"
+        role="slider con servizi offerti allofficina tra cui sostituzione, montaggio, riparazione e vendita pneumatici"
+      >
         <div
-          class="md:flex md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:min-h-[300px] md:h-[20vw]"
+          aria-hidden="true"
+          class="md:hidden md:gap-5 md:overflow-x-scroll w-[95%] md:w-[85%] md:m-0 m-auto font-inter font-black relative overflow-hidden text-white md:min-h-[300px] md:h-[20vw]"
         >
           <div
             v-for="service in services"
@@ -122,14 +160,42 @@ export default {
             </div>
           </div>
         </div>
-        <div class="md:ml-28 hidden md:block">
-          <font-awesome-icon
-            :icon="['fas', 'circle-chevron-right']"
-            style="color: #fff"
-            class="text-[35px] cursor-pointer"
-            aria-hidden="true"
-          />
-        </div>
+
+        <swiper
+          aria-hidden="true"
+          ref="{swiperRef}"
+          :slidesPerView="slidesPerView"
+          :centeredSlides="false"
+          :spaceBetween="30"
+          :navigation="true"
+          :modules="modules"
+          :rewind="true"
+        >
+          <swiper-slide
+            v-for="service in services"
+            class="flex flex-row mt-5 items-center gap-2 md:min-w-[20vw] md:h-[20vw] md:min-h-[20vw] min-h-[40vw] text-white font-inter"
+            :key="service.id"
+          >
+            <div
+              class="bg-red-600 w-1/2 md:w-full p-5 flex flex-col md:justify-normal justify-between relative md:h-[20vw] md:min-w-[20vw] h-[40vw] card"
+            >
+              <p class="text-[13px] md:text-[1.2vw] text-left">
+                {{ service.id }}
+              </p>
+
+              <img
+                aria-hidden="true"
+                :src="service.pic"
+                class="md:w-[6vw] w-[13vw] md:min-w-[50px] m-auto md:absolute md:bottom-8 md:right-6"
+              />
+              <p
+                class="md:mt-5 md:text-[1.2vw] text-[13px] md:w-[70%] text-center md:text-left"
+              >
+                {{ service.title }}
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
     <div
